@@ -6,3 +6,4 @@ Enigma Chat is an end-to-end encrypted chat application
 
 
 Lorem ipusm
+
