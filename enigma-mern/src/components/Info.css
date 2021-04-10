@@ -1,0 +1,29 @@
+.info-img{
+    margin-top: 8vh;
+}
+.info-img img{
+    border-radius: 50%;
+}
+.info-header{
+    text-align: center;
+}
+.info-header h2{
+    font-size: 4vh;
+    font-weight: 600;
+}
+.info-details{
+    text-align: center;
+}
+.info-details span{
+    color: #1095FF;
+    margin-right: 7px;
+    font-weight: 600;
+}
+.info-details p{
+    color: rgba(255,255,255,0.5);
+    margin-top: -0.5vh;
+}
+.info-icon{
+    position: relative;
+    top: 2.5px;
+}

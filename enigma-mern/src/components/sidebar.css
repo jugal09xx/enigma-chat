@@ -1,0 +1,30 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: .20;
+    border: 0.2px solid rgba(255, 255, 255, 0.2);
+    border-left: none;
+    background: #171B24;
+    margin: none;
+    height: 91vh;
+}
+
+.sidebar-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh;
+}
+.sidebar-search input{
+    border: none;
+    background: #202632;
+    width: 90%;
+    border-radius: 50vh;
+    font-size: 1.9vh;
+    padding: 1.5vh;
+    padding-left: 3vh;
+    color: rgba(255, 255, 255, 0.5);
+}
+.sidebar-search input:focus{
+    outline: none;
+}

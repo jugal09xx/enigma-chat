@@ -1,0 +1,36 @@
+.Chat{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    cursor:pointer;
+    transition: 0.2s ease-in-out;
+}
+.Chat:hover{
+     background: #202632;
+    
+}
+.Chat img{
+    margin-left: 3.7vh;
+    width: 8vh;
+    border-radius: 50%;
+}
+.Chat-info{
+    text-align: left;
+    margin-left: 3.2vh;
+    margin-right: 3.2vh;
+}
+.Chat-info h2{
+    position: relative; 
+    top: 0.2vh;
+    font-weight: 500;
+    color: white;
+}
+.Chat-info p{
+    position: relative;
+    color: rgba(255,255,255,0.8);
+    bottom: 1vh;
+}

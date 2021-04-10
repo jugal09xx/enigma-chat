@@ -1,0 +1,51 @@
+
+.chatcontent{
+    background: #171B24;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 0.95;
+    margin-bottom: 20px;
+    border-top: 0.2px solid rgba(255, 255, 255, 0.25);
+    padding-top: 20px;
+    max-height: 88.4vh;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #171B24; }
+::-webkit-scrollbar-track {  background-color: #202632;}
+::-webkit-scrollbar-track-piece { background-color: #171B24;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #2f3541; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #171B24;}
+::-webkit-resizer { background-color: #202;}
+.chat-msg{
+    position: relative;
+    font-size: 14px;
+    padding: 15px;
+    width: fit-content;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background: #202632;
+    font-weight: 400;
+    margin: 20px;
+    margin-bottom: 15px;
+    color: rgba(255,255,255,0.8);
+    margin-top: 0;
+}
+.chat-name{
+    position: absolute;
+    top: -22px;
+}
+.chat-time{
+    font-size: x-small;
+    margin-left: 13px;
+    color: rgba(255,255,255,0.5);
+}
+.chat-recv{
+    margin-left: auto;
+    background: #1095FF;
+    color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0px;
+}

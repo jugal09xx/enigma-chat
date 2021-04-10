@@ -1,0 +1,13 @@
+.App {
+  place-items: center;
+}
+
+.app-body{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+}
+
+
+
+
