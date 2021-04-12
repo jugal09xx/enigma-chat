@@ -1,15 +1,17 @@
 import "./App.css";
+import React from 'react'
 import Sidebar from "./components/sidebar";
 import Chatbox from "./components/chatbox";
 import Navbar from './components/navbar';
 
 function App() {
+
   return (
     <div className="App">
         <Navbar/>
       <div className='app-body'>
         <Sidebar />
-        <Chatbox />
+        <Chatbox/>
       </div>
     </div>
   );

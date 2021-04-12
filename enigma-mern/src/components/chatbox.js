@@ -5,10 +5,11 @@ import {MdInsertEmoticon,MdPhoto,MdSend} from 'react-icons/md'
 import "./chatbox.css";
 
 function Chatbox() {
+
   return (
     <div className="chatbox">
       <div className='chat-container'>
-        <Chatcontent />
+        <Chatcontent/>
         <div className="chat-send">
             <MdInsertEmoticon className='chat-send-icon1'/>
           <form>

@@ -6,7 +6,7 @@ function SidebarChat() {
     return (
         <div className='Chat'>
             <div className='Chat-img'>
-                <img src={Avatar}></img>
+                <img src={Avatar} alt='avatar'></img>
             </div>
             <div className='Chat-info'>
                 <h2>Jugal Lad</h2>
