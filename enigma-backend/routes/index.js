@@ -1,12 +1,25 @@
 import express from 'express'
-//controllers
-import users from '../collections/user.js'
 //middleware
-import { encode } from '../middleware/jtw.js'
+import { encode } from '../middlewares/jwt.js'
 
-const router = expres.Router();
+const router = express.Router();
 
 router
-    .post('/login/:userId', encode, (req,res,next) => {})
+    .post('/login/:userId', encode, (req,res,next) => {
+        return res
+            .status(200)
+            .json({
+                success: true,
+                authorization: req.authToken,
+            })
+    })
+    .get('/login/:userId', encode, (req,res,next) => {
+        return res
+            .status(200)
+            .json({
+                success: true,
+                authorization: req.authToken,
+            })
+    })
 
 export default router

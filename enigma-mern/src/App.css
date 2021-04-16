@@ -1,7 +1,64 @@
 .App {
   place-items: center;
 }
-
+.enigma-login{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 13%;
+}
+.enigma-login > h1{
+  color: rgba(255,255,255);
+  font-weight: 400;
+  font-size: 4em;
+}
+.enigma-login > h1 > span{
+  color: #1095ff;
+  font-weight: 600;
+}
+.enigma-login > form > input:focus{
+  outline: none;
+}
+.enigma-login > form > input{
+  background: #202632;
+  border: none;
+  width: 26vw;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.enigma-login > form > button {
+  border: none;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 1.2em;
+  padding: 10px;
+  background: #202632;
+  width: 30vw;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  width: 15vw;
+  border-radius: 50px;
+}
+.enigma-login > form > p{
+  color: rgba(255,255,255, 0.5)
+}
+a{
+  text-decoration: none;
+  color: #1095ff;
+}
+.enigma-login > form > button:focus{
+  outline: none;
+}
+.enigma-login > form > button:hover{
+  background: #28303f;
+}
 .app-body{
   display: flex;
   flex-flow: row;

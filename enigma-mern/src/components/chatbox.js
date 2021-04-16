@@ -4,12 +4,14 @@ import Chatcontent from "./Chatcontent.js"
 import {MdInsertEmoticon,MdPhoto,MdSend} from 'react-icons/md'
 import "./chatbox.css";
 
-function Chatbox() {
+function Chatbox(props) {
+
+  const currentUser = props.currentUser
 
   return (
     <div className="chatbox">
       <div className='chat-container'>
-        <Chatcontent/>
+        <Chatcontent currentUser={currentUser}/>
         <div className="chat-send">
             <MdInsertEmoticon className='chat-send-icon1'/>
           <form>

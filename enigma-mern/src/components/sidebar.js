@@ -2,15 +2,17 @@ import React from 'react'
 import SidebarChat from './SidebarChat';
 import './sidebar.css'
 
-function Sidebar() {
+function Sidebar(props) {
+
+    const currentUser = props.currentUser
+    console.log(currentUser)
+
     return (
         <div className='sidebar'>
             <div className='sidebar-search'>
                 <input type='text' placeholder='search for something...'/>
             </div>
-            <SidebarChat/>
-            <SidebarChat/>
-            <SidebarChat/>
+            <SidebarChat currentUser={currentUser}/>
         </div>
     )
 }

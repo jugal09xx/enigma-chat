@@ -49,3 +49,10 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 0px;
 }
+.chat-sender{
+    position: relative;
+    bottom: -6px;
+    left: 40px;
+    font-size: x-small;
+    color: rgba(255,255,255,0.5);
+}

@@ -1,15 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import {
   MdChatBubbleOutline,
   MdNotificationsNone,
   MdPeopleOutline,
   MdSettings,
+  MdExitToApp,
   MdMoreVert,
   MdPersonOutline,
 } from "react-icons/md";
+import axios from 'axios';
+import { useHistory } from "react-router";
 
-function Navbar() {
+
+function Navbar(props) {
+
+  let history = useHistory()
+
+  const [currentUser,setCurrentUser] = useState('')
+
+  const url = 'http://localhost:9000'
+
+  useEffect(() => {
+    const getCurrentUser = () => {
+      axios.get(`${url}/users/` + props.currentUser)
+      .then(res => {
+        const name = res.data.user.firstName
+        setCurrentUser(name)
+        console.log(currentUser)
+      }).catch(error => {
+        console.log(error)
+      })
+    }
+    getCurrentUser();
+  },[props.currentUser,currentUser])
+
+  const handleLogout = () => {
+    history.push('/')
+  }
+
+  const showUser = () => {
+    alert(currentUser)
+  }
+
   return (
     <div className="nav-body">
       <div className="nav-header">
@@ -36,11 +69,11 @@ function Navbar() {
       </div>
       <div className="nav-profile">
         <ul>
-          <li>
-            <MdPersonOutline />
+          <li onClick={showUser}>
+            Welcome {currentUser}
           </li>
           <li>
-            <MdMoreVert />
+            <a onClick={handleLogout}><MdExitToApp/></a>
           </li>
         </ul>
       </div>
